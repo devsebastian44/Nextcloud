@@ -52,10 +52,12 @@ http://localhost/nextcloud
 ## 📂 Estructura del proyecto
 
 ```
-Scripts/
-│── setup.sh          # Script de instalación
-│── configuracion.sh  # Script para la configuración
-│── directorios.sh    # Script para bloquear otros directorios
+Nextcloud/
+│── scripts/              # Carpeta con scripts auxiliares
+│   │── setup.sh          # Script de instalación inicial
+│   │── configuracion.sh  # Script para configurar parámetros de Nextcloud
+│   │── directorios.sh    # Script para bloquear y proteger otros directorios
+│── setup.sh              # Instala dependencias y configura la base inicial.
 ```
 
 ---
