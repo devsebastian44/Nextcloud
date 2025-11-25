@@ -16,12 +16,6 @@ Este repositorio incluye un script para configurar tu propia nube de manera senc
 - Base de datos: MySQL
 - PHP 7.4 o superior con extensiones necesarias (gd, curl, zip, xml, etc.)
 
-Instala las librerías necesarias:
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ## 🚀 Instalación
