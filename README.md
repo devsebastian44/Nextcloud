@@ -35,7 +35,8 @@ sudo bash setup.sh
 ```
 
 **NOTA:** Durante la instalación se solicitará varias veces la contraseña de MySQL.  
-Debes ingresar la misma contraseña que configuraste previamente.
+Debes ingresar la misma contraseña que configuraste previamente.  
+Para configurar la seguridad de directorios se debe primero instalar nextcloud mientras tanto no.
 
 ---
 
