@@ -1,0 +1,12 @@
+stages:
+  - test
+
+syntax_check:
+  stage: test
+  image: bash:latest
+  script:
+    - echo "Running syntax checks..."
+    - bash tests/test_syntax.sh
+  only:
+    - main
+    - merge_requests
