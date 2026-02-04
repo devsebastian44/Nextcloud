@@ -1,0 +1,26 @@
+# Logs
+*.log
+nextcloud_install.log
+
+# Configuraciones sensibles
+# Se permite la plantilla pero se ignoran los archivos reales con credenciales
+configs/*.conf
+!configs/sample_parameters.conf
+
+# Archivos del Sistema Operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de Editores/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
