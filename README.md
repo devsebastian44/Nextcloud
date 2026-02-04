@@ -1,66 +1,42 @@
-## Nextcloud
+# Instalador Automatizado de Nextcloud
 
-<p align="center">
-  <img src="./Img/Logo.png" height="300px" width="350px">
-</p>
+![Estado](https://img.shields.io/badge/Estado-Activo-green)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)
 
-**Nextcloud** es una plataforma de almacenamiento y colaboración de código abierto que permite gestionar y compartir archivos, colaborar en documentos, organizar calendarios y tareas, y más. Este repositorio incluye un script para configurar tu propia nube de manera sencilla.
+Una solución profesional y automatizada en Bash para desplegar Nextcloud en servidores Ubuntu. Este proyecto simplifica la instalación del stack LEMP (Linux, Nginx/Apache, MySQL, PHP) y la configuración de Nextcloud.
 
----
+## Características
 
-## ⚙️ Requisitos
+*   **Gestión Automatizada de Dependencias**: Instala PHP 8.1, Apache2, MySQL y las extensiones necesarias.
+*   **Diseño Modular**: Lógica del script separada en funciones para facilitar el mantenimiento.
+*   **Registro (Logging)**: Logs de instalación detallados para la resolución de problemas.
+*   **Verificación de Seguridad**: Verifica privilegios de root antes de la ejecución.
 
-- Sistema operativo: Linux (Ubuntu/Debian recomendado)
-- Servidor web: Apache
-- Base de datos: MySQL
-- PHP 7.4 o superior con extensiones necesarias (gd, curl, zip, xml, etc.)
+## Estructura del Proyecto
 
----
+```
+.
+├── configs/        # Plantillas de configuración
+├── docs/           # Documentación
+├── Scripts/        # Scripts auxiliares
+├── tests/          # Pruebas de validación
+├── setup.sh        # Script instalador principal
+└── .gitlab-ci.yml  # Configuración CI/CD
+```
 
-## 🚀 Instalación
+## Comenzando
 
+Ver [docs/INSTALLATION.md](docs/INSTALLATION.md) para instrucciones detalladas.
 
-Clona el repositorio y accede al directorio:
+### Ejecución Rápida
 
 ```bash
 git clone https://github.com/Devsebastian44/Nextcloud.git
 cd Nextcloud
-```
-
-Configura el entorno y leer detenidamente cada configuración:
-
-```bash
 chmod +x setup.sh
-sudo bash setup.sh
+sudo ./setup.sh
 ```
 
-**NOTA:** Durante la instalación se solicitará varias veces la contraseña de MySQL. Debes ingresar la misma contraseña que configuraste previamente. Para configurar la seguridad de directorios se debe primero instalar nextcloud caso contrario no se podra acceder al sitio.
+## Descargo de Responsabilidad
 
----
-
-## ▶️ Uso
-
-Una vez finalizada la instalación, accede a tu servidor desde el navegador:
-
-```
-http://localhost/setup-nextcloud.php
-```
-
----
-
-## 📂 Estructura del proyecto
-
-```
-Nextcloud/
-│── scripts/              # Carpeta con scripts auxiliares
-│   │── setup.sh          # Script de instalación inicial
-│   │── configuracion.sh  # Script para configurar parámetros de Nextcloud
-│   │── directorios.sh    # Script para bloquear y proteger otros directorios
-│── setup.sh              # Instala dependencias y configura la base inicial.
-```
-
----
-
-## 📜 Licencia
-
-Este proyecto está bajo la licencia GPL. Puedes usarlo libremente con fines educativos y de investigación.
+Este software se proporciona "tal cual", sin garantía de ningún tipo. Úselo bajo su propio riesgo.
