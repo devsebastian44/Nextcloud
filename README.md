@@ -1,7 +1,9 @@
 # Instalador Automatizado de Nextcloud
 
-![Estado](https://img.shields.io/badge/Estado-Activo-green)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)
+![Bash](https://img.shields.io/badge/Bash-5.0+-green?logo=gnubash&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-Repository-orange?logo=gitlab)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 
 Una solución profesional y automatizada en Bash para desplegar Nextcloud en servidores Ubuntu. Este proyecto simplifica la instalación del stack LEMP (Linux, Nginx/Apache, MySQL, PHP) y la configuración de Nextcloud.
 
